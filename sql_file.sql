@@ -1,12 +1,12 @@
-------QUESTION 1
+----QUESTION 1
 --SELECT COUNT(*) FROM users;
 
-------QUESTION 2
+----QUESTION 2
 --SELECT COUNT(*)
 --FROM transfers
 --    WHERE send_amount_currency = 'CFA';
 	
-------QUESTION 3
+----QUESTION 3
 --SELECT DISTINCT COUNT(u_id) FROM transfers
 --    WHERE send_amount_currency = 'CFA';
 	
@@ -42,7 +42,7 @@
 -----QUESTION 7
 --SELECT ag.country as country, ag.city as city, SUM(amount) as volume FROM agent_transactions at
 --	    LEFT JOIN agents ag ON ag.agent_id = at.agent_id
---    	WHERE at.when_created BETWEEN CURRENT_TIMESTAMP - interval '7 days' AND CURRENT_TIMESTAMP
+--   	WHERE at.when_created BETWEEN CURRENT_TIMESTAMP - interval '7 days' AND CURRENT_TIMESTAMP
 --		GROUP BY country,city		
 		
 		
